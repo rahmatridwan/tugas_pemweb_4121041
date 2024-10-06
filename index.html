@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Belajar Membuat Form</title>
+  </head>
+  <!-- Keterangan 
+Formulir akan mengirim data ke formulir.html menggunakan metode GET saat disubmit. Anda juga bisa menggunakan metode POST untuk mengirim data formulir dengan lebih aman. -->
+
+  <body>
+    <form action=" formulir.html" method="get">
+      Nama: <input type="text" name="nama" value="Nama Kamu" />
+      <br />
+      <!-- Keterangan :
+Kolom teks di mana pengguna bisa mengetik nama mereka. Teks default dalam kolom ini adalah "Nama Kamu." -->
+
+      Password: <input type="password" name="password" />
+      <br />
+      <!-- Keterangan :
+Kolom input untuk kata sandi, di mana karakter yang diketik akan disembunyikan. -->
+
+      Jenis Kelamin :
+      <input type="radio" name="jenis_kelamin" value="laki-laki" checked />
+      Laki Laki
+      <input type="radio" name="jenis_kelamin" value="perempuan" />
+      Perempuan
+      <br />
+      <!-- Keterangan 
+Pengguna bisa memilih jenis kelamin mereka. Pilihan pertama ("Laki - Laki") dipilih secara default. -->
+
+      Hobi: <input type="checkbox" name="hobi_baca" /> Membaca Buku
+      <input type="checkbox" name="hobi_nulis" checked /> Menulis
+      <input type="checkbox" name="hobi_mancing" /> Memancing
+      <br />
+      <!-- Keterangan 
+Pengguna bisa memilih jenis kelamin mereka. Pilihan pertama ("Laki - Laki") dipilih secara default. -->
+
+      Asal Kota:
+      <select name="asal_kota">
+        <option value="Kota Jakarta">Jakarta</option>
+        <option value="Kota Bandung">Bandung</option>
+      </select>
+      <option value="Kota Semarang" selected>Semarang</option>
+      <br />
+      <!-- Keterangan :
+Menu dropdown di mana pengguna bisa memilih kota asal mereka dari Jakarta, Bandung, atau Semarang. -->
+
+      Komentar Anda:
+      <textarea name="komentar" rows="5" cols="20">
+            Silahkan katakan isi hati anda
+        </textarea
+      >
+      <br />
+      <!-- Keterangan :
+Kotak teks multi-baris untuk pengguna memberikan komentar. Teks default di dalam kotak adalah "Silahkan katakan isi hati anda." -->
+
+      <input type="submit" value="Mulai Proses!" />
+    </form>
+    <!-- Keterangan :
+Tombol submit dengan label "Mulai Proses!" untuk mengirimkan data formulir ketika diklik. -->
+  </body>
+</html>
